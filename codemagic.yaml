@@ -10,6 +10,7 @@ workflows:
       xcode: latest
       cocoapods: default
     scripts:
+      - xcodebuild -list
       - xcodebuild build -scheme "$XCODE_SCHEME" CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO CODE_SIGNING_ALLOWED=NO
     artifacts:
       - $HOME/Library/Developer/Xcode/DerivedData/**/Build/**/*.app
