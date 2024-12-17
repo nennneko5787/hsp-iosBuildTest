@@ -1,9 +1,13 @@
 workflows:
-
-    sample-workflow:
-
-        name: Codemagic Sample Workflow
-
-        max_build_duration: 120
-
-        instance_type: mac_mini_m2
+  ios-workflow:
+    name: iOS Build
+    environment:
+      xcode: latest
+    scripts:
+      - xcode-project build \
+          --project "hspproj.xcodeproj" \
+          --scheme "YourSchemeName" \
+          --configuration "Release" \
+          --archive
+    artifacts:
+      - build/ios/ipa/*.ipa
