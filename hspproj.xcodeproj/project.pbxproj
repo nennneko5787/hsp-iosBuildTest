@@ -686,7 +686,7 @@
 					USE_OBAQ,
 				);
 				INFOPLIST_FILE = "hspproj/hspproj-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					../iHSP27/lib,
@@ -723,7 +723,7 @@
 					HSPIOS,
 				);
 				INFOPLIST_FILE = "hspproj/hspproj-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					../iHSP27/lib,
