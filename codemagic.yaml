@@ -6,7 +6,7 @@ workflows:
     name: iOS App
     environment:
       vars:
-        XCODE_SCHEME: "Debug"
+        XCODE_SCHEME: "iosBuildTest"
       xcode: latest
       cocoapods: default
     scripts:
