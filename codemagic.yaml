@@ -4,10 +4,16 @@ workflows:
     environment:
       xcode: latest
     scripts:
-      - xcode-project build \
-          --project "hspproj.xcodeproj" \
-          --scheme "YourSchemeName" \
-          --configuration "Release" \
-          --archive
+      - xcodebuild \
+          -project "hspproj.xcodeproj" \
+          -scheme "Debug" \
+          -configuration "Debug" \
+          -archivePath "./build/hspproj.xcarchive" \
+          archive
+      - xcodebuild \
+          -exportArchive \
+          -archivePath "./build/hspproj.xcarchive" \
+          -exportPath "./build" \
+          -exportOptionsPlist "ExportOptions.plist"
     artifacts:
-      - build/ios/ipa/*.ipa
+      - build/*.ipa
