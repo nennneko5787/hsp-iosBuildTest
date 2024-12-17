@@ -1,0 +1,15 @@
+#include "hsp3dish.as"
+
+	text="Hello, HSP3!"
+	setcls 1,$000000
+
+*main
+	redraw 0
+	pos,-512: mes text	// 画面外でダミー描画する
+	// ダミー描画によりginfo_mesxとginfo_mesyに幅と高さが入る
+	x=(ginfo_winx-ginfo_mesx)/2
+	y=(ginfo_winy-ginfo_mesy)/2-24
+	rgbcolor $FFFFFF: pos x,y: mes text	// 描画
+	redraw 1
+	await 16
+	goto *main
