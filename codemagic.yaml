@@ -1,18 +1,17 @@
+# Check out https://docs.codemagic.io/yaml/building-a-native-ios-app/ for more information
+# Please review and update values in curly braces
+
 workflows:
-  ios-workflow:
-    name: iOS Build
+  ios-app:
+    name: iOS App
     environment:
+      vars:
+        XCODE_WORKSPACE: "hspproj"
+        XCODE_SCHEME: "Debug"
       xcode: latest
+      cocoapods: default
     scripts:
-      - xcodebuild \
-        -scheme "Debug" \
-        -configuration "Debug" \
-        -archivePath "./build/hspproj.xcarchive" \
-        archive
-      - xcodebuild \
-        -exportArchive \
-        -archivePath "./build/hspproj.xcarchive" \
-        -exportPath "./build" \
-        -exportOptionsPlist "ExportOptions.plist"
+      - xcodebuild build -workspace "$XCODE_WORKSPACE.xcworkspace" -scheme "$XCODE_SCHEME" CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO CODE_SIGNING_ALLOWED=NO
     artifacts:
-      - build/*.ipa
+      - $HOME/Library/Developer/Xcode/DerivedData/**/Build/**/*.app
+      - $HOME/Library/Developer/Xcode/DerivedData/**/Build/**/*.dSYM
