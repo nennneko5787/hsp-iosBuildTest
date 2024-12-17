@@ -5,15 +5,14 @@ workflows:
       xcode: latest
     scripts:
       - xcodebuild \
-          -project "hspproj.xcodeproj" \
-          -scheme "Debug" \
-          -configuration "Debug" \
-          -archivePath "./build/hspproj.xcarchive" \
-          archive
+        -scheme "Debug" \
+        -configuration "Debug" \
+        -archivePath "./build/hspproj.xcarchive" \
+        archive
       - xcodebuild \
-          -exportArchive \
-          -archivePath "./build/hspproj.xcarchive" \
-          -exportPath "./build" \
-          -exportOptionsPlist "ExportOptions.plist"
+        -exportArchive \
+        -archivePath "./build/hspproj.xcarchive" \
+        -exportPath "./build" \
+        -exportOptionsPlist "ExportOptions.plist"
     artifacts:
       - build/*.ipa
