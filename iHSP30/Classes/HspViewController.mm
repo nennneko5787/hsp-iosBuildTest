@@ -11,7 +11,6 @@
 {
     self = [super init];
     NSLog(@"Init HspViewController");
-    adView = nil;
     return self;
 }
 
@@ -30,19 +29,6 @@
 - (void)controlBanner:(int)prm
 {
     NSLog(@"controlBanner___");
-    if ( adView == nil ) {
-        CGRect screenRect = [[UIScreen mainScreen] applicationFrame];
-        adView = [[[ADBannerView alloc] initWithFrame:CGRectZero] autorelease];
-        adView.currentContentSizeIdentifier = ADBannerContentSizeIdentifierPortrait;
-        adView.frame = CGRectOffset(adView.frame, 0, screenRect.size.height);
-    
-        [self.view addSubview:adView];
-        adView.delegate = self;
-        bannerIsVisible = false;
-        //[self bannerViewDidLoadAd:adView];
-        NSLog(@"controlBanner");
-    }
-    
 }
 
 - (void)viewDidLoad
@@ -60,38 +46,6 @@
 {
     [super viewDidDisappear:animated];
     NSLog(@"viewDidDisappear");
-}
-
-
-- (void)bannerViewDidLoadAd:(ADBannerView *)banner
-{
-    if (!bannerIsVisible)
-    {
-        [UIView
-         animateWithDuration:1.0
-         animations:^{
-             adView.frame = CGRectOffset(banner.frame, 0, -banner.frame.size.height);
-         }
-         ];
-        
-        bannerIsVisible = true;
-    }
-}
-
-
-- (void)bannerView:(ADBannerView *)banner didFailToReceiveAdWithError:(NSError*)error
-{
-    if (bannerIsVisible)
-    {
-        [UIView
-         animateWithDuration:1.0
-         animations:^{
-             adView.frame = CGRectOffset(banner.frame, 0, banner.frame.size.height);
-         }
-         ];
-        
-        bannerIsVisible = false;
-    }
 }
 
 - (void)actMode:(int)amode
