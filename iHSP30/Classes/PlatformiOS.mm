@@ -1,12 +1,13 @@
 #ifndef GP_NO_PLATFORM
 #ifdef __APPLE__
-
+/*
 #include "Base.h"
 #include "Platform.h"
 #include "FileSystem.h"
 #include "Game.h"
 #include "Form.h"
 #include "ScriptController.h"
+*/
 #include <unistd.h>
 #include <sys/time.h>
 #import <UIKit/UIKit.h>
