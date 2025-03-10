@@ -21,7 +21,8 @@ jobs:
           echo $default | cat >default
           echo Using default scheme: $default
       - name: Archive iOS App
-        scheme: ${{ 'default' }}
+        env:
+          scheme: ${{ 'default' }}
         run: |
           # Archive the app to create an .xcarchive file
           if [ $scheme = default ]; then scheme=$(cat default); fi
@@ -29,7 +30,8 @@ jobs:
           file_to_build=`echo $file_to_build | awk '{$1=$1;print}'`
           xcodebuild -scheme "$scheme" -"$filetype_parameter" "$file_to_build" archive -archivePath $PWD/build/$scheme.xcarchive CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO
       - name: Export IPA
-        scheme: ${{ 'default' }}
+        env:
+          scheme: ${{ 'default' }}
         run: |
           # Export the IPA from the archive
           if [ $scheme = default ]; then scheme=$(cat default); fi
