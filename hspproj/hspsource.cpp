@@ -4,8 +4,8 @@
 //
 #include "hsp3r.h"
 
-#define _HSP3CNV_DATE "2024/12/17"
-#define _HSP3CNV_TIME "18:25:27"
+#define _HSP3CNV_DATE "2025/03/10"
+#define _HSP3CNV_TIME "17:57:19"
 #define _HSP3CNV_MAXVAR 3
 #define _HSP3CNV_MAXHPI 32
 #define _HSP3CNV_VERSION 0x360
