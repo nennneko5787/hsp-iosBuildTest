@@ -20,10 +20,9 @@ jobs:
           default=$(echo $scheme_list | ruby -e "require 'json'; puts JSON.parse(STDIN.gets)['project']['targets'][0]")
           echo $default | cat >default
           echo Using default scheme: $default
-      - name: Clean datas
+      - name: Upgrade projects
         run: |
-          xcodebuild clean
-          rm -rf ~/Library/Developer/Xcode/DerivedData/*
+          xcodebuild -project hspproj.xcodeproj -upgrade
       - name: Build
         env:
           scheme: ${{ 'default' }}
