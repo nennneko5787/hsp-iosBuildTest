@@ -5,8 +5,8 @@ from pbxproj.pbxsections.PBXFileReference import PBXFileReference
 
 project = XcodeProject.load("hspproj.xcodeproj/project.pbxproj")
 bs = "\\"
-project.add_header_search_paths("gameplay")
-project.add_header_search_paths("external-deps")
+project.add_header_search_paths("gameplay/src")
+project.add_header_search_paths("external-deps/include")
 
 folder = "iHSP30"
 for root, _, files in os.walk(folder):
