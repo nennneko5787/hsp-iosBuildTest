@@ -13,12 +13,12 @@ for root, _, files in os.walk(folder):
         for file in project.get_files_by_name(_file):
             file: PBXFileReference = file
             project.remove_file_by_id(file.get_id())
-        for file in project.get_files_by_path(f"iHSP30/{rel_path.replace(bs, '/')}"):
+        for file in project.get_files_by_path(f"{folder}/{rel_path.replace(bs, '/')}"):
             file: PBXFileReference = file
             project.remove_file_by_id(file.get_id())
         if "iosgp" in rel_path:
             continue
-        project.add_file(f"iHSP30/{rel_path.replace(bs, '/')}")
+        project.add_file(f"{folder}/{rel_path.replace(bs, '/')}")
         print(rel_path)
 
 
