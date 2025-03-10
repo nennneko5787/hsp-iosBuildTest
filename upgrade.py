@@ -20,8 +20,7 @@ for root, _, files in os.walk(folder):
         print(rel_path)
 
 folder = "gameplay"
-project.add_folder(folder)
-"""
+
 for root, _, files in os.walk(folder):
     for _file in files:
         if _file.endswith(".dox"):
@@ -33,13 +32,10 @@ for root, _, files in os.walk(folder):
         for file in project.get_files_by_path(f"{folder}/{rel_path.replace(bs, '/')}"):
             file: PBXFileReference = file
             project.remove_file_by_id(file.get_id())
-        project.add_file(f"{folder}/{rel_path.replace(bs, '/')}")
-        print(rel_path)
-"""
+
+project.add_folder(folder)
 
 folder = "external-deps"
-project.add_folder(folder)
-"""
 for root, _, files in os.walk(folder):
     for _file in files:
         if _file.endswith(".dox"):
@@ -51,8 +47,7 @@ for root, _, files in os.walk(folder):
         for file in project.get_files_by_path(f"{folder}/{rel_path.replace(bs, '/')}"):
             file: PBXFileReference = file
             project.remove_file_by_id(file.get_id())
-        project.add_file(f"{folder}/{rel_path.replace(bs, '/')}")
-        print(rel_path)
-"""
+
+project.add_folder(folder)
 
 project.save()
