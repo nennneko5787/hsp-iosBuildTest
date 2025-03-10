@@ -20,6 +20,8 @@ for root, _, files in os.walk(folder):
         print(rel_path)
 
 folder = "gameplay"
+project.add_folder(folder)
+"""
 for root, _, files in os.walk(folder):
     for _file in files:
         if _file.endswith(".dox"):
@@ -33,8 +35,11 @@ for root, _, files in os.walk(folder):
             project.remove_file_by_id(file.get_id())
         project.add_file(f"{folder}/{rel_path.replace(bs, '/')}")
         print(rel_path)
+"""
 
 folder = "external-deps"
+project.add_folder(folder)
+"""
 for root, _, files in os.walk(folder):
     for _file in files:
         if _file.endswith(".dox"):
@@ -48,5 +53,6 @@ for root, _, files in os.walk(folder):
             project.remove_file_by_id(file.get_id())
         project.add_file(f"{folder}/{rel_path.replace(bs, '/')}")
         print(rel_path)
+"""
 
 project.save()
