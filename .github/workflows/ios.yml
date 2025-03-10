@@ -2,9 +2,9 @@ name: iOS starter workflow
 
 on:
   push:
-    branches: [ "master" ]
+    branches: ["master"]
   pull_request:
-    branches: [ "master" ]
+    branches: ["master"]
 
 jobs:
   build:
@@ -20,6 +20,9 @@ jobs:
           default=$(echo $scheme_list | ruby -e "require 'json'; puts JSON.parse(STDIN.gets)['project']['targets'][0]")
           echo $default | cat >default
           echo Using default scheme: $default
+      - name: Clean datas
+          xcodebuild clean
+          rm -rf ~/Library/Developer/Xcode/DerivedData/*
       - name: Build
         env:
           scheme: ${{ 'default' }}
