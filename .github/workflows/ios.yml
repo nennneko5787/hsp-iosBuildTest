@@ -52,7 +52,7 @@ jobs:
           export_options_plist="ExportOptions.plist" # Create an ExportOptions.plist file as needed
           xcodebuild -exportArchive -archivePath $PWD/build/$scheme.xcarchive -exportPath $PWD/build -exportOptionsPlist $export_options_plist CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO
       - name: Upload IPA as Artifact
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: iOS-IPA
           path: $PWD/build/*.ipa
