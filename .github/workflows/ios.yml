@@ -8,7 +8,7 @@ on:
 
 jobs:
   build:
-    name: Build, Test, and Export IPA
+    name: Export IPA
     runs-on: macos-latest
 
     steps:
@@ -26,13 +26,13 @@ jobs:
           if [ $scheme = default ]; then scheme=$(cat default); fi
           if [ "`ls -A | grep -i \\.xcworkspace\$`" ]; then filetype_parameter="workspace" && file_to_build="`ls -A | grep -i \\.xcworkspace\$`"; else filetype_parameter="project" && file_to_build="`ls -A | grep -i \\.xcodeproj\$`"; fi
           file_to_build=`echo $file_to_build | awk '{$1=$1;print}'`
-          xcodebuild -scheme "$scheme" -"$filetype_parameter" "$file_to_build" archive -archivePath $PWD/build/$scheme.xcarchive
+          xcodebuild -scheme "$scheme" -"$filetype_parameter" "$file_to_build" archive -archivePath $PWD/build/$scheme.xcarchive CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO
       - name: Export IPA
         run: |
           # Export the IPA from the archive
           if [ $scheme = default ]; then scheme=$(cat default); fi
           export_options_plist="ExportOptions.plist" # Create an ExportOptions.plist file as needed
-          xcodebuild -exportArchive -archivePath $PWD/build/$scheme.xcarchive -exportPath $PWD/build -exportOptionsPlist $export_options_plist
+          xcodebuild -exportArchive -archivePath $PWD/build/$scheme.xcarchive -exportPath $PWD/build -exportOptionsPlist $export_options_plist CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO
       - name: Upload IPA as Artifact
         uses: actions/upload-artifact@v4
         with:
