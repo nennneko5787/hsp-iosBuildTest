@@ -21,9 +21,6 @@
 		1E480DE41859C4A60052A2F2 /* OpenAL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E480DDF1859C4A60052A2F2 /* OpenAL.framework */; };
 		1E480DE51859C4A60052A2F2 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E480DE01859C4A60052A2F2 /* OpenGLES.framework */; };
 		1E480DE61859C4A60052A2F2 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E480DE11859C4A60052A2F2 /* QuartzCore.framework */; };
-		1E4AFF2425E00F4700213810 /* vessel.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1E4AFEA925E00F4700213810 /* vessel.cpp */; };
-		1E4AFF2525E00F4700213810 /* OBAQlicense.txt in Resources */ = {isa = PBXBuildFile; fileRef = 1E4AFEAA25E00F4700213810 /* OBAQlicense.txt */; };
-		1E4AFF2625E00F4700213810 /* rock.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1E4AFEAE25E00F4700213810 /* rock.cpp */; };
 		1E4AFF2725E00F4700213810 /* HspViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 1E4AFEB225E00F4700213810 /* HspViewController.mm */; };
 		1E4AFF2825E00F4700213810 /* Image.mm in Sources */ = {isa = PBXBuildFile; fileRef = 1E4AFEB425E00F4700213810 /* Image.mm */; };
 		1E4AFF2925E00F4700213810 /* Canvas.mm in Sources */ = {isa = PBXBuildFile; fileRef = 1E4AFEB525E00F4700213810 /* Canvas.mm */; };
@@ -71,6 +68,13 @@
 		1EA5558F189A462D00344013 /* icon57.png in Resources */ = {isa = PBXBuildFile; fileRef = 1EA5558C189A462D00344013 /* icon57.png */; };
 		1EA55590189A462D00344013 /* icon58.png in Resources */ = {isa = PBXBuildFile; fileRef = 1EA5558D189A462D00344013 /* icon58.png */; };
 		1EA55591189A462D00344013 /* icon120.png in Resources */ = {isa = PBXBuildFile; fileRef = 1EA5558E189A462D00344013 /* icon120.png */; };
+		266840CAA237D53FE68C08C2 /* ptttypes.h in Headers */ = {isa = PBXBuildFile; fileRef = 53D94C19A36679DA5E0C29CD /* ptttypes.h */; };
+		4A4E4B72BFB3B664D085B293 /* rock.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9B78473390DC8C3D23BE435E /* rock.cpp */; };
+		6EED416DA017AD3AB4DBE20D /* vessel.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DA304CB1A7B88BA9A05859C1 /* vessel.cpp */; };
+		7B3F47C38BF63C02D9C84D55 /* OBAQlicense.txt in Resources */ = {isa = PBXBuildFile; fileRef = 1EE343999AF0D5BAA5C33229 /* OBAQlicense.txt */; };
+		7CDC4B92A40084085866D84A /* vessel.h in Headers */ = {isa = PBXBuildFile; fileRef = 7A9D42A88146FCBEC1F49AF9 /* vessel.h */; };
+		B0D748308A4CC3E64EC4E275 /* gamePhysics.h in Headers */ = {isa = PBXBuildFile; fileRef = C477451A941D79984FFAF9DE /* gamePhysics.h */; };
+		D42649D583F9B1A88F0D6422 /* rock.h in Headers */ = {isa = PBXBuildFile; fileRef = A23E41DFA2FDB3416EEE1130 /* rock.h */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -92,13 +96,6 @@
 		1E480DDF1859C4A60052A2F2 /* OpenAL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenAL.framework; path = System/Library/Frameworks/OpenAL.framework; sourceTree = SDKROOT; };
 		1E480DE01859C4A60052A2F2 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
 		1E480DE11859C4A60052A2F2 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
-		1E4AFEA925E00F4700213810 /* vessel.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = vessel.cpp; sourceTree = "<group>"; };
-		1E4AFEAA25E00F4700213810 /* OBAQlicense.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = OBAQlicense.txt; sourceTree = "<group>"; };
-		1E4AFEAB25E00F4700213810 /* rock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = rock.h; sourceTree = "<group>"; };
-		1E4AFEAC25E00F4700213810 /* gamePhysics.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = gamePhysics.h; sourceTree = "<group>"; };
-		1E4AFEAD25E00F4700213810 /* vessel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = vessel.h; sourceTree = "<group>"; };
-		1E4AFEAE25E00F4700213810 /* rock.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = rock.cpp; sourceTree = "<group>"; };
-		1E4AFEAF25E00F4700213810 /* ptttypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ptttypes.h; sourceTree = "<group>"; };
 		1E4AFEB225E00F4700213810 /* HspViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = HspViewController.mm; sourceTree = "<group>"; };
 		1E4AFEB325E00F4700213810 /* iOSBridge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iOSBridge.h; sourceTree = "<group>"; };
 		1E4AFEB425E00F4700213810 /* Image.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = Image.mm; sourceTree = "<group>"; };
@@ -195,6 +192,13 @@
 		1EA5558C189A462D00344013 /* icon57.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon57.png; sourceTree = "<group>"; };
 		1EA5558D189A462D00344013 /* icon58.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon58.png; sourceTree = "<group>"; };
 		1EA5558E189A462D00344013 /* icon120.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon120.png; sourceTree = "<group>"; };
+		1EE343999AF0D5BAA5C33229 /* OBAQlicense.txt */ = {isa = PBXFileReference; lastKnownFileType = text; name = OBAQlicense.txt; path = iHSP30/obaq/physics/OBAQlicense.txt; sourceTree = SOURCE_ROOT; };
+		53D94C19A36679DA5E0C29CD /* ptttypes.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ptttypes.h; path = iHSP30/obaq/physics/ptttypes.h; sourceTree = SOURCE_ROOT; };
+		7A9D42A88146FCBEC1F49AF9 /* vessel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = vessel.h; path = iHSP30/obaq/physics/vessel.h; sourceTree = SOURCE_ROOT; };
+		9B78473390DC8C3D23BE435E /* rock.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = rock.cpp; path = iHSP30/obaq/physics/rock.cpp; sourceTree = SOURCE_ROOT; };
+		A23E41DFA2FDB3416EEE1130 /* rock.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = rock.h; path = iHSP30/obaq/physics/rock.h; sourceTree = SOURCE_ROOT; };
+		C477451A941D79984FFAF9DE /* gamePhysics.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = gamePhysics.h; path = iHSP30/obaq/physics/gamePhysics.h; sourceTree = SOURCE_ROOT; };
+		DA304CB1A7B88BA9A05859C1 /* vessel.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = vessel.cpp; path = iHSP30/obaq/physics/vessel.cpp; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -223,6 +227,13 @@
 				1E480DB41859C4540052A2F2 /* hspproj */,
 				1E480DAD1859C4540052A2F2 /* Frameworks */,
 				1E480DAC1859C4540052A2F2 /* Products */,
+				DA304CB1A7B88BA9A05859C1 /* vessel.cpp */,
+				C477451A941D79984FFAF9DE /* gamePhysics.h */,
+				1EE343999AF0D5BAA5C33229 /* OBAQlicense.txt */,
+				53D94C19A36679DA5E0C29CD /* ptttypes.h */,
+				9B78473390DC8C3D23BE435E /* rock.cpp */,
+				A23E41DFA2FDB3416EEE1130 /* rock.h */,
+				7A9D42A88146FCBEC1F49AF9 /* vessel.h */,
 			);
 			sourceTree = "<group>";
 		};
@@ -301,13 +312,6 @@
 		1E4AFEA825E00F4700213810 /* physics */ = {
 			isa = PBXGroup;
 			children = (
-				1E4AFEA925E00F4700213810 /* vessel.cpp */,
-				1E4AFEAA25E00F4700213810 /* OBAQlicense.txt */,
-				1E4AFEAB25E00F4700213810 /* rock.h */,
-				1E4AFEAC25E00F4700213810 /* gamePhysics.h */,
-				1E4AFEAD25E00F4700213810 /* vessel.h */,
-				1E4AFEAE25E00F4700213810 /* rock.cpp */,
-				1E4AFEAF25E00F4700213810 /* ptttypes.h */,
 			);
 			path = physics;
 			sourceTree = "<group>";
@@ -449,14 +453,29 @@
 		};
 /* End PBXGroup section */
 
+/* Begin PBXHeadersBuildPhase section */
+		72D64B1CA86D4F057D051B4B /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B0D748308A4CC3E64EC4E275 /* gamePhysics.h in Headers */,
+				266840CAA237D53FE68C08C2 /* ptttypes.h in Headers */,
+				D42649D583F9B1A88F0D6422 /* rock.h in Headers */,
+				7CDC4B92A40084085866D84A /* vessel.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
 /* Begin PBXNativeTarget section */
-		1E480DAA1859C4540052A2F2 /* grotate */ = {
+		1E480DAA1859C4540052A2F2 /* iosBuildTest */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 1E480DD71859C4540052A2F2 /* Build configuration list for PBXNativeTarget "grotate" */;
+			buildConfigurationList = 1E480DD71859C4540052A2F2 /* Build configuration list for PBXNativeTarget "iosBuildTest" */;
 			buildPhases = (
 				1E480DA71859C4540052A2F2 /* Sources */,
 				1E480DA81859C4540052A2F2 /* Frameworks */,
 				1E480DA91859C4540052A2F2 /* Resources */,
+				72D64B1CA86D4F057D051B4B /* Headers */,
 			);
 			buildRules = (
 			);
@@ -474,7 +493,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0500;
-				ORGANIZATIONNAME = "nennneko5787";
+				ORGANIZATIONNAME = nennneko5787;
 				TargetAttributes = {
 					1E480DAA1859C4540052A2F2 = {
 						DevelopmentTeam = 5FH2J53M7P;
@@ -482,7 +501,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 1E480DA61859C4540052A2F2 /* Build configuration list for PBXProject "hspproj" */;
+			buildConfigurationList = 1E480DA61859C4540052A2F2 /* Build configuration list for PBXProject "iosBuildTest" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -496,7 +515,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				1E480DAA1859C4540052A2F2 /* grotate */,
+				1E480DAA1859C4540052A2F2 /* iosBuildTest */,
 			);
 		};
 /* End PBXProject section */
@@ -509,11 +528,11 @@
 				1EA55590189A462D00344013 /* icon58.png in Resources */,
 				1E0417D4189A70E5003F87D6 /* Default.png in Resources */,
 				1EA5558F189A462D00344013 /* icon57.png in Resources */,
-				1E4AFF2525E00F4700213810 /* OBAQlicense.txt in Resources */,
 				1EA55591189A462D00344013 /* icon120.png in Resources */,
 				1E0417D3189A70E5003F87D6 /* Default-568h@2x.png in Resources */,
 				1E0417D5189A70E5003F87D6 /* Default@2x.png in Resources */,
 				1E480DB91859C4540052A2F2 /* InfoPlist.strings in Resources */,
+				7B3F47C38BF63C02D9C84D55 /* OBAQlicense.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -544,7 +563,6 @@
 				1E4AFF3625E00F4700213810 /* hspvar_str.cpp in Sources */,
 				1E4AFF5825E00F4700213810 /* hsp3gr_dish.cpp in Sources */,
 				1E4AFF2E25E00F4700213810 /* Graphics.mm in Sources */,
-				1E4AFF2425E00F4700213810 /* vessel.cpp in Sources */,
 				1E4AFF3925E00F4700213810 /* dpmread.cpp in Sources */,
 				1E6849631859C5D200603D88 /* hspsource.cpp in Sources */,
 				1E4AFF2825E00F4700213810 /* Image.mm in Sources */,
@@ -558,7 +576,6 @@
 				1E4AFF3525E00F4700213810 /* hspwnd_dish.cpp in Sources */,
 				1E4AFF3125E00F4700213810 /* hsp3embed.cpp in Sources */,
 				1E4AFF5625E00F4700213810 /* hspvar_core.cpp in Sources */,
-				1E4AFF2625E00F4700213810 /* rock.cpp in Sources */,
 				1E4AFF2925E00F4700213810 /* Canvas.mm in Sources */,
 				1E4AFF3E25E00F4700213810 /* hspvar_double.cpp in Sources */,
 				1E4AFF4425E00F4700213810 /* stb_image.c in Sources */,
@@ -572,6 +589,8 @@
 				1E4AFF5925E00F4700213810 /* hspwnd_obj.cpp in Sources */,
 				1E4AFF2C25E00F4700213810 /* iOSBridge.mm in Sources */,
 				1E4AFF3225E00F4700213810 /* misc.mm in Sources */,
+				6EED416DA017AD3AB4DBE20D /* vessel.cpp in Sources */,
+				4A4E4B72BFB3B664D085B293 /* rock.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -624,7 +643,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 			};
@@ -658,7 +677,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -686,7 +705,7 @@
 					USE_OBAQ,
 				);
 				INFOPLIST_FILE = "hspproj/hspproj-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					../iHSP27/lib,
@@ -723,7 +742,7 @@
 					HSPIOS,
 				);
 				INFOPLIST_FILE = "hspproj/hspproj-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					../iHSP27/lib,
@@ -742,7 +761,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		1E480DA61859C4540052A2F2 /* Build configuration list for PBXProject "hspproj" */ = {
+		1E480DA61859C4540052A2F2 /* Build configuration list for PBXProject "iosBuildTest" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				1E480DD51859C4540052A2F2 /* Debug */,
@@ -751,7 +770,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		1E480DD71859C4540052A2F2 /* Build configuration list for PBXNativeTarget "grotate" */ = {
+		1E480DD71859C4540052A2F2 /* Build configuration list for PBXNativeTarget "iosBuildTest" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				1E480DD81859C4540052A2F2 /* Debug */,
