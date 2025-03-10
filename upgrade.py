@@ -22,6 +22,9 @@ for root, _, files in os.walk(folder):
 folder = "gameplay"
 for root, _, files in os.walk(folder):
     for file in files:
+        _file: str = file
+        if _file.endswith(".dox"):
+            continue
         rel_path = os.path.relpath(os.path.join(root, file), folder)
         for file in project.get_files_by_name(file):
             file: PBXFileReference = file
@@ -35,6 +38,9 @@ for root, _, files in os.walk(folder):
 folder = "external-deps"
 for root, _, files in os.walk(folder):
     for file in files:
+        _file: str = file
+        if _file.endswith(".dox"):
+            continue
         rel_path = os.path.relpath(os.path.join(root, file), folder)
         for file in project.get_files_by_name(file):
             file: PBXFileReference = file
